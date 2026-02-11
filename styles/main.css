@@ -1,4 +1,15 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+}
+
+
 .shadow {
   text-shadow: 1px 1px #800000;
 }
@@ -6,12 +17,23 @@
 body {
     font-family: sans-serif;
     font-size: 100%;
+    width: 600px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
 }
+
 
 header {
     display: flex;
     gap: 20px;
+    border-bottom: 3px solid #931420;
+    padding: 1.5em 0 2em 0;
+    background-image: linear-gradient(#f6bb73, white);
+}
 
+header img {
+    padding: 1em;
 }
 
 header h2 {
@@ -25,17 +47,47 @@ header h3 {
     font-style: italic;
     padding-left: 30px;
 }
+
+main {
+    padding: 1em;
+}
 main h1 {
     font-size: 150%;
+    padding: .3em 0;
+    border-bottom: 3px solid #931420;
+    border-top: 3px solid #931420;
 }
 
 main h2 {
     font-size: 130%;
     color: #800000;
+    padding: .5em 0 .25em 0;
 }
 
 main h3{
     font-size: 105%;
+    padding-bottom: .25em;
+}
+
+main img {
+    padding-bottom: 1em;
+}
+
+main p {
+    padding-bottom: .5em;
+}
+
+main blockquote {
+    padding: 0 2em;
+    font-style: italic;
+}
+
+main ul {
+    padding: 0 0 .25em 1.25em;
+}
+
+main li {
+    padding-bottom: .35em;
 }
 
 a:hover,
@@ -45,4 +97,10 @@ a:focus {
 
 footer {
     text-align: center;
+    background-color: #931420;
+}
+
+footer p {
+    color: white;
+    padding: 1em 0;
 }
