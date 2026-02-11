@@ -50,11 +50,24 @@ header h3 {
 
 main {
     padding: 1em;
+    display: flex;
+}
+
+main aside {
+    width: 25%;
+}
+
+main section {
+    width: 75%;
 }
 main h1 {
     font-size: 150%;
     padding: .3em 0;
-    border-bottom: 3px solid #931420;
+   
+}
+
+main article {
+     border-bottom: 3px solid #931420;
     border-top: 3px solid #931420;
 }
 
