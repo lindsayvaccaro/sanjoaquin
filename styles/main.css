@@ -17,10 +17,11 @@ html {
 body {
     font-family: sans-serif;
     font-size: 100%;
-    width: 600px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
+    max-width: 1200px;
+
 }
 
 
@@ -58,7 +59,9 @@ main aside {
 }
 
 main section {
-    width: 75%;
+    width: 70%;
+    float: left;
+    padding: 2%;
 }
 main h1 {
     font-size: 150%;
@@ -144,4 +147,47 @@ footer p {
 
 #nav_menu a:hover {
     color: yellow;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+/* ***************
+Media Queries
+********************** */
+@media only screen and (max-width: 900px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+     main {
+        flex-direction: column;
+        align-items:center ;
+    }
+    section, aside {
+        max-width: 95%;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobilemenu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #800000;
+    }
+    h1 {
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    header {
+        flex-direction: column;
+    }
+    
 }
