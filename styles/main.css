@@ -188,6 +188,15 @@ Media Queries
 @media only screen and (max-width: 479px) {
     header {
         flex-direction: column;
+        font-size: 90%;
+    }
+
+    p {
+        font-size: 90%;
+    }
+    header, img {
+        max-width: 30px;
+        height: auto;
     }
     
 }
